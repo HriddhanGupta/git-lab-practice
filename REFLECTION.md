@@ -1,7 +1,9 @@
-1. Merging `update-message-a` was clean because `main` had not changed the sum line. Merging `update-message-b` caused a conflict because both branches changed that same line differently.
+# Pull Requests and Code Review Reflection
 
-2. The section under `HEAD` is the version currently on `main`. The section under the branch name is the incoming version from the branch being merged.
+1. Squash and Merge combines a small feature's implementation and review-fix commits into one clean commit on main, making history easier to follow. The pull request still preserves the discussion and review context.
 
-3. `git merge --abort`
+2. Add single comment publishes feedback immediately, while Start a review holds inline comments until they are submitted together. Batching gives the author organized feedback and avoids repeated notifications.
 
-4. Part B showed a single line because the merge was a fast-forward. Part C showed branches diverging and rejoining at a merge commit because both branches had separate commits.
+3. Branch protection rules can prevent direct changes to main and require a pull request and approval before merging. This creates an opportunity to review changes and catch errors before they enter the main codebase.
+
+4. Fetching and merging origin/main into a feature branch lets the author resolve competing edits and test the combined result without rewriting shared history. Force-pushing can discard other commits rather than reconciling the changes.
