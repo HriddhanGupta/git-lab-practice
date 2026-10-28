@@ -15,6 +15,6 @@ def divide(a, b):
     return a / b
 
 if __name__ == "__main__":
-    print("=== CALCULATOR ===")
+    print("=== SUPER CALCULATOR ===")
     print(f"Sum (a + b): {add(2, 3)}")
     print(subtract(5, 2))
